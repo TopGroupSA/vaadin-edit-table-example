@@ -19,13 +19,18 @@ Usage
 -----
 
 ```java
+
+
+import com.topgroup.commons.vaadin.view.table.edit.EditRowTableFieldFactory;
+import com.topgroup.commons.vaadin.view.table.edit.EditableTableDecorator;
+// other imports
+
 class BooksPanel extends Panel {
   
   public void init() {
-    //..
-    
-    table = new Table();
-		EditableTableDecorator<BookEditRow> tableDecorator = new EditableTableDecorator<BookEditRow>(table, BookEditRow.class);
+    	// init code here
+    	table = new Table();
+    	EditableTableDecorator<BookEditRow> tableDecorator = new EditableTableDecorator<BookEditRow>(table, BookEditRow.class);
 		table.setTableFieldFactory(new EditRowTableFieldFactory(table) {
 
 			@Override
@@ -42,7 +47,6 @@ class BooksPanel extends Panel {
 		// populate table data
 		table.focus();
 		table.setValue(table.firstItemId());
-		
   }
 }
 ```
