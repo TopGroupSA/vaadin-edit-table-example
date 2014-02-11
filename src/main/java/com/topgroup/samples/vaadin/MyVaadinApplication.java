@@ -80,6 +80,7 @@ public class MyVaadinApplication extends Application {
 		tableDecorator.addActionHandler(window);
 		container.addComponent(tableDecorator.getTableLayout());
 		initTable();
+		table.focus();
 		table.setValue(table.firstItemId());
 		window.setContent(container);
 	}
