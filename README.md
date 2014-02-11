@@ -9,8 +9,8 @@ Download
 Grab via Maven:
 ```xml
 <dependency>
- 	<groupId>topgroup.commons</groupId>
-     	<artifactId>commons-vaadin</artifactId>
+	<groupId>topgroup.commons</groupId>
+	<artifactId>commons-vaadin</artifactId>
 	<version>1.0.17</version>
 </dependency>
 ```
