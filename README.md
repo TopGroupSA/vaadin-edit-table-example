@@ -33,3 +33,7 @@ class BooksPanel extends Panel {
   }
 }
 ```
+
+To run the sample application change into the project directory and type:
+
+    mvn install jetty:run
