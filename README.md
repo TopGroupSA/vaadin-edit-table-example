@@ -1,4 +1,4 @@
-TopGroup commons-vaadinvaadin-edit-table-example
+vaadin-edit-table-example
 =========================
 
 Example of a VAADIN editable table using commons-vaadin library class EditableTableDecorator.
