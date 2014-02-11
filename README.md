@@ -1,9 +1,22 @@
 vaadin-edit-table-example
 =========================
 
-Example of a VAADIN editable table using commons-vaadin library class EditableTableDecorator.
+Example of a VAADIN editable table using commons-vaadin library class EditableTableDecorator. This helper classes are available in commons-vaadin 1.0.17 or later.
 
-Usage:
+Download
+--------
+
+Grab via Maven:
+```xml
+<dependency>
+ 	<groupId>topgroup.commons</groupId>
+     	<artifactId>commons-vaadin</artifactId>
+	<version>1.0.17</version>
+</dependency>
+```
+
+Usage
+-----
 
 ```java
 class BooksPanel extends Panel {
@@ -34,6 +47,8 @@ class BooksPanel extends Panel {
 }
 ```
 
+Run the application
+-------------------
 To run the sample application change into the project directory and type:
 
     mvn install jetty:run
