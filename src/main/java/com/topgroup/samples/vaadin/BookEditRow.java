@@ -8,9 +8,17 @@ public class BookEditRow extends TableEditRowBean {
 
 	public static final String TITLE = "title";
 
+	public static final String CATEGORY = "category";
+
+	public static final String AVAILABLE = "available";
+
 	private String isbn;
 
 	private String title;
+
+	private Category category;
+
+	private boolean available = true;
 
 	public BookEditRow() {
 		super();
@@ -36,6 +44,22 @@ public class BookEditRow extends TableEditRowBean {
 		return isbn;
 	}
 
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+
+	public boolean isAvailable() {
+		return available;
+	}
+
+	public void setAvailable(boolean available) {
+		this.available = available;
+	}
+
 	public static class Builder {
 
 		private BookEditRow row;
@@ -44,6 +68,16 @@ public class BookEditRow extends TableEditRowBean {
 			row = new BookEditRow();
 			row.setIsbn(isbn);
 			row.setTitle(title);
+		}
+
+		public Builder category(Category category) {
+			row.setCategory(category);
+			return this;
+		}
+
+		public Builder available(boolean available) {
+			row.setAvailable(available);
+			return this;
 		}
 
 		public BookEditRow build() {
