@@ -56,3 +56,7 @@ Run the application
 To run the sample application change into the project directory and type:
 
     mvn install jetty:run
+    
+Open your browser and enter the following address:
+
+    http://localhost:8080/vaadin-edit-table/
